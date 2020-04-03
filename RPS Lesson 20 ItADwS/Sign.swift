@@ -37,7 +37,7 @@ enum Sign {
     }
     
     func getResult(for opposite: Sign ) -> GameState {
-        switch (self, oposite) {
+        switch (self, opposite) {
         case (.rock, .rock),
              (.paper, .paper),
              (.scissors, .scissors):
@@ -50,8 +50,6 @@ enum Sign {
             return .lose
         }
     }
-    
-    
     
     
     //        switch self {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,16 +12,16 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RPS_Lesson_20_ItADwS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="dtL-EI-r8Z">
-                                <rect key="frame" x="36" y="184.5" width="303" height="288.5"/>
+                                <rect key="frame" x="8.5" y="112.5" width="303" height="343.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fk8-5b-THN">
                                         <rect key="frame" x="88.5" y="0.0" width="126" height="126"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="fk8-5b-THN" secondAttribute="height" multiplier="1:1" id="MtT-yW-FvI"/>
+                                            <constraint firstAttribute="width" secondItem="fk8-5b-THN" secondAttribute="height" multiplier="1:1" id="7mN-Yi-7ze"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="95"/>
                                         <state key="normal" title="🤡"/>
@@ -52,13 +52,18 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tna-tq-yLe">
+                                        <rect key="frame" x="105.5" y="307.5" width="92" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Play Again"/>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="dtL-EI-r8Z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PI0-oY-THw"/>
-                            <constraint firstItem="dtL-EI-r8Z" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-4.75" id="mKJ-aZ-fbx"/>
+                            <constraint firstItem="dtL-EI-r8Z" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="3Fg-Hl-3ac"/>
+                            <constraint firstItem="dtL-EI-r8Z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dWa-ed-0ay"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
