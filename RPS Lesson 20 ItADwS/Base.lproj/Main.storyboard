@@ -25,6 +25,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="95"/>
                                         <state key="normal" title="🤡"/>
+                                        <connections>
+                                            <action selector="backgroundButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="kOA-Ni-zGB"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock, Paper, Scissors?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7K-ik-ZcX">
                                         <rect key="frame" x="36" y="145" width="231" height="26.5"/>
@@ -39,16 +42,25 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="77" height="98"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="72"/>
                                                 <state key="normal" title="👊"/>
+                                                <connections>
+                                                    <action selector="rockButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="xxY-yY-2yA"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D79-bQ-1yr">
                                                 <rect key="frame" x="113" y="0.0" width="77" height="98"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="72"/>
                                                 <state key="normal" title="✋"/>
+                                                <connections>
+                                                    <action selector="paperButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="knt-1e-LhD"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igM-Jy-90y">
                                                 <rect key="frame" x="226" y="0.0" width="77" height="98"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="72"/>
                                                 <state key="normal" title="✌️"/>
+                                                <connections>
+                                                    <action selector="scissorsButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="9rI-WL-mtR"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -56,9 +68,19 @@
                                         <rect key="frame" x="105.5" y="307.5" width="92" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Play Again"/>
+                                        <connections>
+                                            <action selector="resetButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="z7h-Q3-Otw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0-0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AX8-PP-eTY">
+                                <rect key="frame" x="146" y="49" width="61" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -67,10 +89,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundButton" destination="fk8-5b-THN" id="my1-94-4Xe"/>
+                        <outlet property="counterLabel" destination="AX8-PP-eTY" id="Mc7-pE-pPM"/>
+                        <outlet property="paperButton" destination="D79-bQ-1yr" id="5U2-YR-79N"/>
+                        <outlet property="playAgainButton" destination="Tna-tq-yLe" id="iLT-qQ-s3I"/>
+                        <outlet property="rockButton" destination="yx5-oq-ZEr" id="gsz-hp-R2t"/>
+                        <outlet property="scissorsButton" destination="igM-Jy-90y" id="Acj-n3-FgP"/>
+                        <outlet property="statusLabel" destination="P7K-ik-ZcX" id="FWL-A0-vpp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
+            <point key="canvasLocation" x="136.875" y="115.14084507042254"/>
         </scene>
     </scenes>
 </document>
